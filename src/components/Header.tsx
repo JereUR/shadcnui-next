@@ -32,8 +32,8 @@ export default function Header() {
       <CommandDemo />
       <div className="flex items-center justify-end">
         <DropdownMenu>
-          <DropdownMenuTrigger>
-            <Button variant="outline" size="icon" className="relative">
+          <DropdownMenuTrigger className="relative">
+            <Button variant="outline" size="icon">
               <div
                 className={`absolute top-0 right-1 h-[6px] w-[6px] rounded-full my-1 ${
                   notifications.find((x: any) => x.read)
