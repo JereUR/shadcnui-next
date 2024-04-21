@@ -19,11 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex items-start justify-between`}>
-        <Sidebar />
-        <main
-          className="grid h-full pl-[300px]"
-          style={{ width: 'calc(100% - 300px)' }}
-        >
+        <div className="hidden md:flex min-w-[300px] border-r min-h-screen">
+          <Sidebar />
+        </div>
+        <main className="grid h-full w-full">
           <Header />
           <div className="p-8">{children}</div>
         </main>
